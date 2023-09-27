@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacMan by Youssef</title>
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="data/maze.js"></script>
+    <script src="model/data.js"></script>
+    <script src="model/Component.js"></script>
+    <script src="model/tile.js"></script>
+    <script src="model/Dot.js"></script>
+    <script src="model/Wall.js"></script>
+    <script src="model/Position.js"></script>
+    <script src="model/Layer.js"></script>
+    <script src="model/Maze.js"></script>
+    <script src="model/Game.js"></script>
+    <script src="controller/GameCtrl.js"></script>
+    <script src="view/GameView.js"></script>
+    <script src="model/Direction.js"></script>
+    <script src="model/Sprite.js"></script>
+    <script src="model/Pacman.js"></script>
+    <script src="controller/PacmanCtrl.js"></script>
+    <script src="view/PacmanView.js"></script>
+    <script src="model/Ghost.js"></script>
+    <link href="/data/pacman.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1 id="tilescore">HIGH SCORE</h1>
+        <h3 id="score">0</h3>
+        <h3 id="highScore"></h3>
+    </header>
+    <main>
+        <div id="board">
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="live"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(main);
+    </script>
+</body>
+
+</html>

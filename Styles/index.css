@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  margin-left: 35%;
+  border: solid 3px blue;
+  border-radius: 10px;
+  background-color: black;
+  font-family: "VT323", monospace;
+  width: 433px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  border: solid 3px blue;
+  border-radius: 10px;
+  margin: 1px;
+  height: 75px;
+  color: white;
+  font-size: 10px;
+}
+
+#score {
+  font-size: 25px;
+  margin: 0px;
+}
+
+#highScore {
+  font-size: 25px;
+  width: 50px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+main {
+  position: relative;
+  grid-area: main;
+  color: white;
+  margin: 3px;
+}
+
+#board div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.empty {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+}
+
+.wall {
+  color: black;
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+}
+
+.pac-dot {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin: 4px;
+}
+
+.energizer {
+  background-color: red;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin: 4px;
+}
+
+.pacman {
+  z-index: 1;
+  height: 15px;
+  width: 15px;
+  background-image: url("/data/picture/pacman.png");
+}
+
+.blinky {
+  z-index: 1;
+  height: 15px;
+  width: 15px;
+  background-image: url("/data/picture/ghostBlue.png");
+}
+
+.pinky {
+  z-index: 1;
+  height: 15px;
+  width: 15px;
+  background-image: url("/data/picture/ghostPink.png");
+}
+
+.inky {
+  z-index: 1;
+  height: 15px;
+  width: 15px;
+  background-image: url("/data/picture/ghostRed.png");
+}
+
+.clyde {
+  z-index: 1;
+  height: 15px;
+  width: 15px;
+  background-image: url("/data/picture/ghostOrange.png");
+}
+
+footer {
+  grid-area: footer;
+  border: solid 3px blue;
+  border-radius: 10px;
+  margin: 1px;
+  height: 40px;
+}
+
+.life {
+  background-color: red;
+  display: inline-block;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#start {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 44px;
+  width: 90px;
+  top: 195px;
+  left: 165px;
+  background-color: transparent;
+  color: red;
+  font-size: 40px;
+  font-family: "VT323", monospace;
+}
